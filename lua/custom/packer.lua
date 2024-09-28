@@ -10,12 +10,24 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+--    use {
+--        "rose-pine/neovim",
+--        as = "rose-pine",
+--        config = function()
+--            vim.cmd("colorscheme rose-pine")
+--        end
+--    }
+
     use {
-        "rose-pine/neovim",
-        as = "rose-pine",
-        config = function()
-            vim.cmd("colorscheme rose-pine")
-        end
+        "tiagovla/tokyodark.nvim",
+        opts = {
+            --   custom options here
+        },
+        as = "tokyodark",
+        config = function(_, opts)
+            require("tokyodark").setup(opts)
+            vim.cmd [[colorscheme tokyodark]]
+        end,
     }
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
@@ -27,5 +39,8 @@ return require('packer').startup(function(use)
         requires = { { "nvim-lua/plenary.nvim" } }
     }
 
-
+    use {
+        "nvim-treesitter/nvim-treesitter-context",
+        requires = { { "nvim-treesitter/nvim-treesitter"  } }
+    }
 end)
