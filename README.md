@@ -1,0 +1,1 @@
+This repository contains a custom Neovim configuration that leverages the Packer plugin manager. It is set up to optimize your Neovim experience, providing better code editing, navigation, and productivity tools.
