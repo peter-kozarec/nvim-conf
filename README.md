@@ -4,7 +4,7 @@ This repository contains a custom Neovim configuration that leverages the Packer
 
 Before using this configuration, ensure you have the following dependencies installed:
 
-- **Neovim**: [Neovim]([https://github.com/neovim/neovim/wiki/Installing-Neovim](https://github.com/neovim/neovim))
+- **Neovim**
 - **Packer.nvim**: Plugin manager for Neovim.
   
   You can install Packer by running:
