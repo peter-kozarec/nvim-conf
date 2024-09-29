@@ -14,7 +14,22 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("LOCALAPPDATA") .. "/.vim/undodir"
+
+local BinaryFormat = package.cpath:match("%p[\\|/]?%p(%a+)")
+if BinaryFormat == "dll" then
+    function os.name()
+        vim.opt.undodir = os.getenv("LOCALAPPDATA") .. "/.vim/undodir"
+    end
+elseif BinaryFormat == "so" then
+    function os.name()  
+	vim.opt.undodir = os.getenv("HOME") .. ".local/share/nvim/undotree"
+    end
+elseif BinaryFormat == "dylib" then
+    function os.name()
+        -- MacOS
+    end
+end
+
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
