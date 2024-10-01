@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
 --    use {
 --        "rose-pine/neovim",
 --        as = "rose-pine",
---        config = function()
+--       config = function()
 --            vim.cmd("colorscheme rose-pine")
 --        end
 --    }
@@ -43,4 +43,11 @@ return require('packer').startup(function(use)
         "nvim-treesitter/nvim-treesitter-context",
         requires = { { "nvim-treesitter/nvim-treesitter"  } }
     }
+
+
+    -- For Ctags code navigation
+    use('ludovicchabant/vim-gutentags')
+
+    -- For CCLS LSP server
+    use {'neoclide/coc.nvim', branch = 'release'}
 end)
