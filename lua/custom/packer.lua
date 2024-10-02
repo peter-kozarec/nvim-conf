@@ -47,4 +47,7 @@ return require('packer').startup(function(use)
 
     use('lewis6991/gitsigns.nvim')    
     use('shellRaining/hlchunk.nvim')
+    use('echasnovski/mini.nvim')
+    use('nvim-tree/nvim-web-devicons')
+    use('folke/which-key.nvim')
 end)

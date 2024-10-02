@@ -10,4 +10,4 @@ tscontext.setup{
     on_attach = nil,
 }
 
-vim.keymap.set("n", "<leader>ct", ":TSContextToggle\n")
+vim.keymap.set("n", "<leader>ct", ":TSContextToggle\n", {desc = 'TreeSitter context toogle'})
