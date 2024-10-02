@@ -10,14 +10,6 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
---    use {
---        "rose-pine/neovim",
---        as = "rose-pine",
---       config = function()
---            vim.cmd("colorscheme rose-pine")
---        end
---    }
-
     use {
         "tiagovla/tokyodark.nvim",
         opts = {
@@ -46,11 +38,9 @@ return require('packer').startup(function(use)
 
 
     -- For Ctags code navigation
-    use('ludovicchabant/vim-gutentags')
+    use('ludovicchabant/vim-gutentags') -- ctags installed
 
-    -- For CCLS LSP server
-    use {'neoclide/coc.nvim', branch = 'release'}
-
+    -- Status bar
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
