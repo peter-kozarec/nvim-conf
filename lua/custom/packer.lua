@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
     use{'folke/which-key.nvim'}                         -- help for shortcuts
     use{'nvim-lualine/lualine.nvim'}                    -- status bar
     use{'jakemason/ouroboros'}                          -- *.h / *.cpp switch
+    use{'ggandor/lightspeed.nvim'}                      -- text navigation
 
     -- This ones are for legacy projects with custom compilers which
     -- does not support clangd or any other LSP very well
