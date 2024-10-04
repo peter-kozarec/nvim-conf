@@ -18,5 +18,9 @@ return require('packer').startup(function(use)
     use{'folke/which-key.nvim'}                         -- help for shortcuts
     use{'nvim-lualine/lualine.nvim'}                    -- status bar
 
+    -- This ones are for legacy projects with custom compilers which
+    -- does not support clangd or any other LSP very well
+    -- ctags installed
     use{'ludovicchabant/vim-gutentags'}                 -- ctags
+    use{'preservim/tagbar'}                             -- ctags tagbar
 end)
