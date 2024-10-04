@@ -12,7 +12,7 @@ return require('packer').startup(function(use)
     use{'tpope/vim-fugitive'}                           -- git
     use{'nvim-treesitter/nvim-treesitter-context'}      -- function signature
     use{'ThePrimeagen/harpoon', branch = 'harpoon2'}    -- file navigation
-    use{'tiagovla/tokyodark.nvim'}                      -- active theme
+    use{'rebelot/kanagawa.nvim'}                        -- active theme
     use{'lewis6991/gitsigns.nvim'}                      -- git changes
     use{'shellRaining/hlchunk.nvim'}                    -- show indentation
     use{'folke/which-key.nvim'}                         -- help for shortcuts
