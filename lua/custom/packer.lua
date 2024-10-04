@@ -5,6 +5,7 @@ return require('packer').startup(function(use)
     use{'wbthomason/packer.nvim'}                       -- package manager
     use{'nvim-lua/plenary.nvim'}                        -- system interaction
     use{'nvim-tree/nvim-web-devicons'}                  -- icons
+    use{'echasnovski/mini.icons'}                       -- icons
     use{'nvim-telescope/telescope.nvim'}                -- fuzy finder
     use{'nvim-treesitter/nvim-treesitter'}              -- ts abstraction
     use{'mbbill/undotree'}                              -- undo
@@ -17,5 +18,5 @@ return require('packer').startup(function(use)
     use{'folke/which-key.nvim'}                         -- help for shortcuts
     use{'nvim-lualine/lualine.nvim'}                    -- status bar
 
---  use{'ludovicchabant/vim-gutentags'}                 -- ctags
+    use{'ludovicchabant/vim-gutentags'}                 -- ctags
 end)
