@@ -14,15 +14,15 @@ return require('packer').startup(function(use)
     use{'ThePrimeagen/harpoon', branch = 'harpoon2'}    -- file navigation
     use{'rebelot/kanagawa.nvim'}                        -- active theme, compile
     use{'lewis6991/gitsigns.nvim'}                      -- git changes
-    use{'shellRaining/hlchunk.nvim'}                    -- show indentation
     use{'folke/which-key.nvim'}                         -- help for shortcuts
     use{'nvim-lualine/lualine.nvim'}                    -- status bar
     use{'jakemason/ouroboros'}                          -- *.h / *.cpp switch
     use{'ggandor/lightspeed.nvim'}                      -- text navigation
 
-    -- This ones are for legacy projects with custom compilers which
-    -- does not support clangd or any other LSP very well
-    -- ctags installed
-    use{'ludovicchabant/vim-gutentags'}                 -- ctags
-    use{'preservim/tagbar'}                             -- ctags tagbar
+    -- LSP configuration
+    use{'neovim/nvim-lspconfig'}                        -- lsp needed
+    use{'hrsh7th/nvim-cmp'}                             -- autocompletion
+    use{'hrsh7th/cmp-nvim-lsp'}                         -- sources for nvim-cmp
+    use{'saadparwaiz1/cmp_luasnip'}                     -- snippets for nvim-cmp
+    use{'L3MON4D3/LuaSnip'}                             -- snuppet plugin
 end)
